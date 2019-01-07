@@ -22,6 +22,7 @@
                     ref="start"
                     tabindex="1"
                     v-model="email"
+                    :rules="[rules.email]"
                     label="E-mail"
                     autocomplete="new-email"
                     type="text"
@@ -91,6 +92,9 @@
                   >
                     <tbody>
                       <tr>
+                        <td><br><br></td>
+                      </tr>
+                      <tr>
                         <td valign="top">
                           <a tabindex="-1" target="_blank" href="https://www.financas360.com.br/">
                             <img alt="Logo - finanças 360" title="Logo - finanças 360" border="0" src="https://lh6.googleusercontent.com/proxy/POr10ABfBkb4qkYs8XgJnyy3IzRK4Jme5hlEsGFiqn7LZObP0Huyin6f7vCtjEk7UX-oY2vEXw=s800#https://i.imgur.com/0nr54h6.png" style="width: 120px;margin-top: 0;margin-right:10px;">
@@ -120,7 +124,7 @@
                               </tr>
                               <tr>
                                 <td style="text-decoration: none; display: grid;font: normal 100% Arial,Helvetica,sans-serif">
-                                  <a style="color: #2f79c5;text-decoration: none;" href="mailto:luiz@financas360.com.br">{{ email || "luiz@financas360.com.br" }}</a>
+                                  <a style="color: #2f79c5;text-decoration: none;" v-bind:href="'mailto:'+(email)">{{ email}}</a>
                                 </td>
                               </tr>
                               <tr>
@@ -142,7 +146,7 @@
                                     <img style="width:20px;" src="https://lh5.googleusercontent.com/proxy/GNq77rNSkFgh2rWt_uxwSag8BmZ0e-zNJjwor7J1VB3c6pQc-KZVmxhU14_EpPNrojm3_sIVoQ=s800#https://i.imgur.com/otRrhlh.png" alt="Facebook">
                                   </a>&nbsp;
                                   <a target="_blank" href="https://blog.financas360.com.br/">
-                                    <img style="width:20px;" src="https://lh4.googleusercontent.com/proxy/BHdkzWfWNWLjf0ZR7_kVLuteFxRcMk_2yEiMxq7C3bcq2sTqAYYMVrlN-bVnn_Sk8FFzllMklA=s800#https://i.imgur.com/3ozJJGx.png" alt="Blog">
+                                    <img style="width:20px;" src="https://lh3.googleusercontent.com/proxy/-Y8z8m7GUpRANmRVjvbm0M70WeZ8o0vA3-nQzgrwGeBoCSZVwVBjFjLk_VMu0Gj_KxJH_n7dRg=s800#https://i.imgur.com/0Gkzkwv.png" alt="Blog">
                                   </a>
                                 </td>
                               </tr>
@@ -154,6 +158,22 @@
                   </table>
                 </div>
               </div>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      <v-container fluid>
+        <v-layout row wrap>
+          <v-flex xs12 md6 pa-2>
+            <v-card class="elevation-1 signature__step">
+              <span style="margin:2px 5px;">Vá em configuraçãoes.</span>
+              <img src="@/assets/ex1.gif" />
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md6 pa-2>
+            <v-card class="elevation-1 signature__step">
+              <span style="margin:2px 5px;">Cole e ative sua assinatura.</span>
+              <img src="@/assets/ex2.gif" />
             </v-card>
           </v-flex>
         </v-layout>
@@ -175,7 +195,13 @@ export default {
     address: "",
     website: "https://www.financas360.com.br/",
     phone1: "+55 (11) 2091-6178",
-    phone2: ""
+    phone2: "",
+    rules: {
+      email: value => {
+        const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return pattern.test(value) || 'E-mail inválido.'
+      }
+    }
   }),
   computed: {
     tel1() {
