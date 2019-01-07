@@ -1,7 +1,7 @@
 var APP_PREFIX = "EmailSignature_";
 var VERSION = "version_02";
 var CACHE_NAME = APP_PREFIX + VERSION;
-var URLS = ["/email-signature/", "/email-signature/index.html"];
+var URLS = ["/assinatura-email-f360/", "/assinatura-email-f360/index.html"];
 
 self.addEventListener("fetch", function(e) {
   e.respondWith(

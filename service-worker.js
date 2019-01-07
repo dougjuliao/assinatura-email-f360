@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/assinatura-email-f360/precache-manifest.c40b6ab72e165761ea0683a32eb91a8d.js"
+  "/assinatura-email-f360/precache-manifest.ae6a775d3d0d3b6367ff3d193ee77fe9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "signature"});
