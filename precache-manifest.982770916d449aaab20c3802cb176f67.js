@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fb8a88a820508d0ff1f1",
+    "revision": "4ec267cec54fdd827ebd",
     "url": "/assinatura-email-f360/css/app.1ca80083.css"
   },
   {
-    "revision": "fb8a88a820508d0ff1f1",
-    "url": "/assinatura-email-f360/js/app.3452db88.js"
+    "revision": "4ec267cec54fdd827ebd",
+    "url": "/assinatura-email-f360/js/app.1bf235e0.js"
   },
   {
     "revision": "e17f382f18ff4b798685",
@@ -16,7 +16,15 @@ self.__precacheManifest = [
     "url": "/assinatura-email-f360/js/chunk-vendors.3c829d10.js"
   },
   {
-    "revision": "89214c07f56757f6e42b71cef12473a4",
+    "revision": "0adec66c8e38891082e83c87a90927bc",
+    "url": "/assinatura-email-f360/img/ex1.0adec66c.gif"
+  },
+  {
+    "revision": "2b920871b13fe01396e6ae082eb8902f",
+    "url": "/assinatura-email-f360/img/ex2.2b920871.gif"
+  },
+  {
+    "revision": "e85ea9a4e3ec2ba47ca03fb2a8dc5278",
     "url": "/assinatura-email-f360/index.html"
   },
   {
