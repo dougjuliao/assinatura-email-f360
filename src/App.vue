@@ -97,7 +97,7 @@
                       <tr>
                         <td valign="top">
                           <a tabindex="-1" target="_blank" href="https://www.financas360.com.br/">
-                            <img alt="Logo - finanças 360" title="Logo - finanças 360" border="0" src="https://lh6.googleusercontent.com/proxy/POr10ABfBkb4qkYs8XgJnyy3IzRK4Jme5hlEsGFiqn7LZObP0Huyin6f7vCtjEk7UX-oY2vEXw=s800#https://i.imgur.com/0nr54h6.png" style="width: 120px;margin-top: 0;margin-right:10px;">
+                            <img alt="Logo - finanças 360" title="Logo - finanças 360" border="0" src="https://i.imgur.com/0nr54h6.png" style="width: 120px;margin-top: 0;margin-right:10px;">
                           </a>
                         </td>
                         <td padding="0" style="font-family: arial,sans-serif;">
@@ -105,12 +105,12 @@
                             <tbody>
                               <tr>
                                 <td style="font: normal 100% Arial,Helvetica,sans-serif">
-                                  <span style="font-weight: bold; font-size: 13px; color: #404756;">{{ name || "Luiz Saouda" }}</span>
+                                  <span style="font-weight: bold; font-size: 13px; color: #404756;">{{name}}</span>
                                 </td>
                               </tr>
                               <tr>
                                 <td style="font: normal 100% Arial,Helvetica,sans-serif">
-                                  <span style="color: #9a9a9a;">{{ title || "CTO" }}</span>
+                                  <span style="color: #9a9a9a;">{{title}}</span>
                                 </td>
                               </tr>
                               <tr>
@@ -140,13 +140,13 @@
                               <tr>
                                 <td style="font: normal 100% Arial,Helvetica,sans-serif">
                                   <a target="_blank" href="https://www.linkedin.com/company/finan%C3%A7as-360/">
-                                    <img style="width:20px;" src="https://lh4.googleusercontent.com/proxy/Nb57bhqqPVG12hbQEplZ9USKWNSF0D0c5k3hnwXJxgIsCi1ghvRF4ch8PvW2Rd7swMRdx3CbXw=s800#https://i.imgur.com/AzWbcNp.png" alt="Linkedin">
+                                    <img style="width:20px;" src="https://i.imgur.com/AzWbcNp.png" alt="Linkedin">
                                   </a>&nbsp;
                                   <a target="_blank" href="https://pt-br.facebook.com/financas360/">
-                                    <img style="width:20px;" src="https://lh5.googleusercontent.com/proxy/GNq77rNSkFgh2rWt_uxwSag8BmZ0e-zNJjwor7J1VB3c6pQc-KZVmxhU14_EpPNrojm3_sIVoQ=s800#https://i.imgur.com/otRrhlh.png" alt="Facebook">
+                                    <img style="width:20px;" src="https://i.imgur.com/otRrhlh.png" alt="Facebook">
                                   </a>&nbsp;
                                   <a target="_blank" href="https://blog.financas360.com.br/">
-                                    <img style="width:20px;" src="https://lh3.googleusercontent.com/proxy/-Y8z8m7GUpRANmRVjvbm0M70WeZ8o0vA3-nQzgrwGeBoCSZVwVBjFjLk_VMu0Gj_KxJH_n7dRg=s800#https://i.imgur.com/0Gkzkwv.png" alt="Blog">
+                                    <img style="width:20px;" src="https://i.imgur.com/0Gkzkwv.png" alt="Blog">
                                   </a>
                                 </td>
                               </tr>
@@ -165,14 +165,14 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 md6 pa-2>
+            <span style="margin:2px 5px;">Vá em configuraçãoes.</span>
             <v-card class="elevation-1 signature__step">
-              <span style="margin:2px 5px;">Vá em configuraçãoes.</span>
               <img src="@/assets/ex1.gif" />
             </v-card>
           </v-flex>
           <v-flex xs12 md6 pa-2>
+            <span style="margin:2px 5px;">Cole e ative sua assinatura.</span>
             <v-card class="elevation-1 signature__step">
-              <span style="margin:2px 5px;">Cole e ative sua assinatura.</span>
               <img src="@/assets/ex2.gif" />
             </v-card>
           </v-flex>
